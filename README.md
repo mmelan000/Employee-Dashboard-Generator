@@ -16,12 +16,16 @@ The purpose of this is to allow a manager to enter their information as well as 
 ## Installation  
 
 1. Download. 
-2. Run ```npm i`` from the terminal while in the folder location. 
+2. Run ```npm i``` from the terminal while in the folder location. 
 3. Enter the command ```node index.js```.  
 
 ## Usage  
 
-Placeholder  
+**[Walkthrough Video](placeholder)**
+
+![App Screenshot](./assets/images/SS1.png) 
+
+![App Screenshot](./assets/images/SS2.png) 
 
 ## Contributing  
 

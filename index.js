@@ -6,20 +6,19 @@ const Manager = require('./lib/Manager');
 let employeeList = [];
 
 function generateCards(employee){
-    console.log('generateCard called');
     let headerColor = '';
     let info = '';
 
     if (employee.getRole() === 'Manager'){
-        headerColor = 'blue';
+        headerColor = 'rgb(45, 140, 230)';
         info = `Office Number: ${employee.officeNumber}`;
     }
     if (employee.getRole() === 'Engineer'){
-        headerColor = 'red';
-        info = `GitHub: <a href="https://www.github.com/${employee.getGithub()}">${employee.getGithub()}<a>`;
+        headerColor = 'rgb(75, 150, 71)';
+        info = `GitHub: <a href="https://www.github.com/${employee.getGithub()}">${employee.getGithub()}</a>`;
     }
     if (employee.getRole() === 'Intern'){
-        headerColor = 'yellow';
+        headerColor = 'rgb(177, 127, 0)';
         info = `School: ${employee.getSchool()}`;
     }
 
@@ -53,12 +52,12 @@ function generateHTML() {
 </head>
 
 <body>
-    <header class="jumbotron text-center" style="background-color: red; color: white;">
+    <header class="jumbotron text-center" style="background-color: rgb(148, 7, 7); color: white;">
         <h1 class="display-4">My Team</h1>
         <p class="lead">Welcome to the Employee Dashboard, here is your current team.</p>
     </header>
     <main class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-3">`)
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">`)
     .then(employeeList.forEach(generateCards))
     .then(fs.appendFile('./dist/index.html', `
         </div>
