@@ -23,9 +23,9 @@ The purpose of this is to allow a manager to enter their information as well as 
 
 **[Walkthrough Video](placeholder)**
 
-![App Screenshot](./assets/images/SS1.png) 
+![App Screenshot](./Assets/images/SS1.png) 
 
-![App Screenshot](./assets/images/SS2.png) 
+![App Screenshot](./Assets/images/SS2.png) 
 
 ## Contributing  
 
