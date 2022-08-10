@@ -28,10 +28,10 @@ function generateCards(employee){
                 <div class="card h-100">
                     <h3 class="card-header" style="background-color:${headerColor}; color: white;">${employee.getName()}</h3>
                     <div class="card-body">
-                            <h5 class="card-title">${employee.getRole()}</h5>
-                            <p class="card-text">Employee ID: ${employee.getID()}</p>
-                            <p class="card-text">Email: <a href="mailto: ${employee.getEmail()}">${employee.getEmail()}</a></p>
-                            <p class="card-text">${info}</p>
+                        <h5 class="card-title">${employee.getRole()}</h5>
+                        <p class="card-text">Employee ID: ${employee.getID()}</p>
+                        <p class="card-text">Email: <a href="mailto: ${employee.getEmail()}">${employee.getEmail()}</a></p>
+                        <p class="card-text">${info}</p>
                     </div>
                 </div>
             </section>`);
