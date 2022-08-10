@@ -23,24 +23,22 @@ function generateCards(employee){
         info = `School: ${employee.getSchool()}`;
     }
 
-    fs.appendFile('./dist/index.html, '`
-    <div class="col mb-4">
-        <div class="card h-100">
-            <h3 class="card-header" style="background-color:${headerColor} color: white;">${employee.getName()}</h3>
-            <div class="card-body">
-                    <h5 class="card-title">${employee.getRole()}</h5>
-                    <p class="card-text">Employee ID: ${employee.getID()}</p>
-                    <p class="card-text">Email: <a href="mailto: ${employee.getEmail()}">${employee.getEmail()}</a></p>
-                    <p class="card-text">${info}<p>
-            </div>
-        </div>
-    </div>
-        `);
+    fs.appendFile('./dist/index.html', `
+            <section class="col mb-4">
+                <div class="card h-100">
+                    <h3 class="card-header" style="background-color:${headerColor}; color: white;">${employee.getName()}</h3>
+                    <div class="card-body">
+                            <h5 class="card-title">${employee.getRole()}</h5>
+                            <p class="card-text">Employee ID: ${employee.getID()}</p>
+                            <p class="card-text">Email: <a href="mailto: ${employee.getEmail()}">${employee.getEmail()}</a></p>
+                            <p class="card-text">${info}</p>
+                    </div>
+                </div>
+            </section>`);
 }
 // writes webpage to index.html fire in dist folder, uses generateCard for employee section
 function generateHTML() {
-    fs.writeFile('./dist/index.html', `
-<!DOCTYPE html>
+    fs.writeFile('./dist/index.html', `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -55,14 +53,19 @@ function generateHTML() {
 </head>
 
 <body>
-    <div class="jumbotron text-center" style="background-color: red; color: white;">
+    <header class="jumbotron text-center" style="background-color: red; color: white;">
         <h1 class="display-4">My Team</h1>
         <p class="lead">Welcome to the Employee Dashboard, here is your current team.</p>
-    </div>
-    <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-3">
-`);
-employeeList.forEach.generateCards();
+    </header>
+    <main class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-3">`)
+    .then(employeeList.forEach(generateCards))
+    .then(fs.appendFile('./dist/index.html', `
+        </div>
+    </main>
+</body>
+
+</html>`));
 }
 // creates inter, pushes to employeeList, then sends flow back to employeeInfo
 function createIntern() {
@@ -198,7 +201,7 @@ function employeeInfo() {
                     createIntern()
                     break;
                 case 'None, I am finished making my team.':
-                    generateJumbotron()
+                    generateHTML()
                     break;
             }
         })
