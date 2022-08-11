@@ -55,6 +55,8 @@ THEN I exit the application, and the HTML is generated
 
 ![App Screenshot](./Assets/images/SS2.png) 
 
+**[Sample of deployed HTML](https://mmelan000.github.io/Employee-Dashboard-Generator/)**
+
 ## Contributing  
 
 Follow best practices for naming conventions, indentation, quality comments, etc.  
