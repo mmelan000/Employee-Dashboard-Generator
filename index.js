@@ -4,7 +4,7 @@ const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 let employeeList = [];
-
+// generates employee cards for HTML and appends them
 function generateCards(employee){
     let headerColor = '';
     let info = '';
