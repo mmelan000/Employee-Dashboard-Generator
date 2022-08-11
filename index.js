@@ -64,7 +64,7 @@ function generateHTML() {
 </body>
 
 </html>`))
-    .then(console.log('Dasboard successfully created.'));
+    .then(console.log('Dashboard successfully created.'));
 }
 // creates inter, pushes to employeeList, then sends flow back to employeeInfo
 function createIntern() {

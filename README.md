@@ -21,7 +21,7 @@ The purpose of this is to allow a manager to enter their information as well as 
 
 ## Usage  
 
-**[Walkthrough Video](placeholder)**
+**[Walkthrough Video](https://drive.google.com/file/d/1QaviwklVCTNazefBhnmVNIgdwy2Qhaf4/view?usp=sharing)**
 
 ![App Screenshot](./Assets/images/SS1.png) 
 

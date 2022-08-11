@@ -1,7 +1,7 @@
 const Employee = require('../lib/Employee.js');
-const testName = 'Michael Melanson';
-const testID = 10017401;
-const testEmail = 'm.melanson000@gmail.com';
+const testName = 'Ravenloft';
+const testID = 'ABC1234';
+const testEmail = 'email@email.com';
 const testEmployee = new Employee(testName, testID, testEmail)
 
 describe('Employee', () => {
