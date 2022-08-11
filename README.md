@@ -51,11 +51,11 @@ THEN I exit the application, and the HTML is generated
 
 **[Walkthrough Video](https://drive.google.com/file/d/1QaviwklVCTNazefBhnmVNIgdwy2Qhaf4/view?usp=sharing)**
 
+**[Sample of deployed HTML](https://mmelan000.github.io/Employee-Dashboard-Generator/)**
+
 ![App Screenshot](./Assets/images/SS1.png) 
 
 ![App Screenshot](./Assets/images/SS2.png) 
-
-**[Sample of deployed HTML](https://mmelan000.github.io/Employee-Dashboard-Generator/)**
 
 ## Contributing  
 
