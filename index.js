@@ -15,7 +15,7 @@ function generateCards(employee){
     }
     if (employee.getRole() === 'Engineer'){
         headerColor = 'rgb(75, 150, 71)';
-        info = `GitHub: <a href="https://www.github.com/${employee.getGithub()}">${employee.getGithub()}</a>`;
+        info = `GitHub: <a href="https://www.github.com/${employee.getGithub()}" target="_blank" rel="noopener noreferrer">${employee.getGithub()}</a>`;
     }
     if (employee.getRole() === 'Intern'){
         headerColor = 'rgb(177, 127, 0)';
@@ -45,7 +45,6 @@ function generateHTML() {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Employee Dashboard</title>
@@ -64,7 +63,8 @@ function generateHTML() {
     </main>
 </body>
 
-</html>`));
+</html>`))
+    .then(console.log('Dasboard successfully created.'));
 }
 // creates inter, pushes to employeeList, then sends flow back to employeeInfo
 function createIntern() {
