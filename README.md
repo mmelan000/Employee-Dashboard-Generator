@@ -33,7 +33,7 @@ Follow best practices for naming conventions, indentation, quality comments, etc
 
 ## Tests  
 
-The program uses Jest for testing. There are pre-built tests inculded in the repository. If you would like to adjust the test, adjust the global variable to whatever you desire to test, then ```npm run test```  
+The program uses Jest for testing. There are pre-built tests inculded in the repository. If you would like to adjust the test, adjust the global variables to whatever you desire to test, then ```npm run test```  
 
 ## Questions  
 
